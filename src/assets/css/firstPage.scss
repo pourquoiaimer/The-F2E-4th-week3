@@ -1,0 +1,137 @@
+.first_page {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  .title {
+    position: absolute;
+    display: block;
+    top: 30%;
+    left: 0;
+    right: 0;
+    width: 75%;
+    max-width: 1131px;
+    height: 15%;
+    max-height: 181px;
+    margin: auto;
+    background: url("./assets/images/標題.png") no-repeat center;
+    background-size: contain;
+    // animation: backInDown; /* referring directly to the animation's @keyframe declaration */
+  }
+  .press_to_start {
+    cursor: default;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: auto;
+    height: 60px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 60px;
+    letter-spacing: 14.5px;
+    color: white;
+    -webkit-text-stroke: 1.5px $dark-grey;
+    @include sm {
+      font-size: 24px;
+      -webkit-text-stroke: 1px $dark-grey;
+      letter-spacing: 10px;
+    }
+  }
+  .people_left_top {
+    position: absolute;
+    top: 0;
+    // left: -250px;
+    transform: rotate(108.58deg) translate(50%, 65%);
+    width: 662px;
+    height: 432px;
+    background: url("./assets/images/職員2.png") no-repeat;
+    background-size: contain;
+    @include s1440 {
+      display: none;
+    }
+  }
+  .people_right_top {
+    position: absolute;
+    top: -200px;
+    right: -100px;
+    transform: rotate(-124.58deg);
+    width: 353px;
+    height: 611px;
+    background: url("./assets/images/職員3.png") no-repeat;
+    background-size: contain;
+    @include s1440 {
+      display: none;
+    }
+  }
+  .people_left_down {
+    position: absolute;
+    bottom: -350px;
+    left: 80px;
+    transform: rotate(21.37deg);
+    // width: 50%;
+    width: 456px;
+    // height: 50%;
+    height: 851px;
+    background: url("./assets/images/職員1.png") no-repeat;
+    background-size: contain;
+    @include s1440 {
+      left: 30px;
+      width: 400px;
+      height: 700px;
+      bottom: -300px;
+    }
+    @include md {
+      left: 10px;
+      width: 270px;
+      height: 500px;
+      bottom: -200px;
+    }
+    @include s768 {
+      left: 0;
+      width: 200px;
+      height: 350px;
+      bottom: -150px;
+    }
+    @include sm {
+      display: none;
+    }
+  }
+
+  .people_right_down {
+    position: absolute;
+    bottom: -400px;
+    right: 100px;
+    transform: rotate(-16.5deg);
+    // width: 30%;
+    width: 512.52px;
+    // height: 70%;
+    height: 887.32px;
+    background: url("./assets/images/職員4.png") no-repeat;
+    background-size: contain;
+    @include s1440 {
+      right: 80px;
+      width: 400px;
+      height: 700px;
+      bottom: -300px;
+    }
+    @include md {
+      right: 40px;
+      width: 270px;
+      height: 500px;
+      bottom: -200px;
+    }
+    @include s768 {
+      right: 0;
+      width: 200px;
+      height: 350px;
+      bottom: -150px;
+    }
+    @include sm {
+      display: none;
+    }
+  }
+}

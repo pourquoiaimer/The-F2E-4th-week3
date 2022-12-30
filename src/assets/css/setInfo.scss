@@ -1,0 +1,24 @@
+.set_info {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  .people_red {
+    position: absolute;
+    bottom: 0;
+    right: 250px;
+    width: 248px;
+    height: 380px;
+    background: url("./assets/images/職員2.png") no-repeat;
+    background-size: contain;
+    @include s1440 {
+      right: 150px;
+      width: 200px;
+      height: 300px;
+    }
+    @include md {
+      right: 100px;
+      width: 150px;
+      height: 225px;
+    }
+  }
+}

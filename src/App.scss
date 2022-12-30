@@ -1,0 +1,78 @@
+$primary: #ffac89;
+$primary_dark: #fcd20d;
+$primary_hover: #cb9b0c;
+$secondary: #ff7d45;
+$secondary_dark: #00212d;
+$tertiary: #fff8ba;
+$light-grey: #f2ece8;
+$mid-grey: #cfc8c4;
+$dark-grey: #8e7e74;
+
+@mixin s1440 {
+  @media (max-width: 1439px) {
+    @content;
+  }
+}
+@mixin md {
+  @media (max-width: 1023px) {
+    @content;
+  }
+}
+@mixin s768 {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+@mixin sm {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+* {
+  font-family: Noto Sans CJK TC;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+#root {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background: url("./assets/images/bg-img.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+
+  // @include md {
+  // }
+  // @include sm {
+  // }
+}
+
+@import './assets/css/firstPage.scss';
+@import './assets/css/setInfo.scss';
+@import './assets/css/others.scss';

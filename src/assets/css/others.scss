@@ -1,0 +1,40 @@
+.text_block {
+  margin: 120px 300px;
+  padding: 80px 140px;
+  background: rgba(255, 255, 255, 0.9);
+  width: 888px;
+  box-shadow: 0px 4px 30px rgba(116, 48, 48, 0.4);
+  backdrop-filter: blur(15px);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  @include s1440 {
+    margin: 80px 120px;
+    width: 680px;
+  }
+  @include md {
+    margin: 60px 150px;
+    width: 450px;
+  }
+  .text {
+    font-family: "Noto Sans TC";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 180%;
+    color: $dark-grey;
+    white-space: pre-line;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    @include s1440 {
+        font-size: 28px;
+    }
+      @include md {
+        font-size: 24px;
+
+      }
+  }
+}
