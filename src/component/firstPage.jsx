@@ -7,6 +7,7 @@ import { gsap } from 'gsap';
 const FirstPage = () => {
       const [canGo, setCanGo] = useState(false)
       const { setNowShow } = useContext(all_status)
+      
 
       let timeline = gsap.timeline()
 
@@ -38,7 +39,7 @@ const FirstPage = () => {
             <div className='first_page' onClick={goNext}>
                   <div className='title'>
                   </div>
-                  <h2 className='press_to_start'>點擊任意位置開始</h2>
+                  <h2 className='press_to_start'>點擊任意位置開始吧</h2>
                   <div className='people_left_top'></div>
                   <div className='people_left_down'></div>
                   <div className='people_right_top'></div>
