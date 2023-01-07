@@ -1,8 +1,8 @@
 .text_block {
   margin: 120px 300px;
-  padding: 80px 140px;
+  padding: 50px 140px;
   background: rgba(255, 255, 255, 0.9);
-  width: 888px;
+  max-width: 888px;
   box-shadow: 0px 4px 30px rgba(116, 48, 48, 0.4);
   backdrop-filter: blur(15px);
   border-radius: 30px;
@@ -12,11 +12,11 @@
   align-items: flex-end;
   @include s1440 {
     margin: 80px 120px;
-    width: 680px;
+    max-width: 680px;
   }
   @include md {
     margin: 60px 150px;
-    width: 450px;
+    max-width: 450px;
   }
   .text {
     font-family: "Noto Sans TC";
@@ -30,11 +30,82 @@
     order: 0;
     flex-grow: 0;
     @include s1440 {
-        font-size: 28px;
+      font-size: 28px;
     }
-      @include md {
-        font-size: 24px;
+    @include md {
+      font-size: 24px;
+    }
+  }
+  .text_button1 {
+    margin-top: 30px;
+    width: 256px;
+    height: 71px;
+    border-radius: 10px;
+    color: white;
+    background-color: $primary;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+      background-color: $secondary;
+    }
+    // position: relative;
+    .button_text {
+      font-size: 40px;
+    }
+  }
+  .triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15.5px 0 15.5px 31px;
+    border-color: transparent transparent transparent white;
+  }
+}
 
-      }
+.text_block2 {
+  margin: 120px 300px;
+  padding: 50px 140px;
+  background: rgba(255, 255, 255, 0.9);
+  width: auto;
+  max-width: 888px;
+  box-shadow: 0px 4px 30px rgba(116, 48, 48, 0.4);
+  backdrop-filter: blur(15px);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  @include s1440 {
+    width: auto;
+
+    margin: 80px 120px;
+    max-width: 680px;
+  }
+  @include md {
+    width: auto;
+
+    margin: 60px 150px;
+    max-width: 450px;
+  }
+  .text {
+    font-family: "Noto Sans TC";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 180%;
+    color: $dark-grey;
+    white-space: pre-line;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    @include s1440 {
+      font-size: 28px;
+    }
+    @include md {
+      font-size: 24px;
+    }
   }
 }

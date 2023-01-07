@@ -12,10 +12,10 @@ cd dist
 
 git init
 
-git checkout gh-pages
+git checkout pages
 
 git add -A
 
 git commit -m 'deploy'
 
-git push 
+git push -f https://github.com/pourquoiaimer/The-F2E-4th-week3.git pages

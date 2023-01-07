@@ -13,7 +13,7 @@
     height: 15%;
     max-height: 181px;
     margin: auto;
-    background: url("./assets/images/標題.png") no-repeat center;
+    background: url("./assets/images/title.png") no-repeat center;
     background-size: contain;
     // animation: backInDown; /* referring directly to the animation's @keyframe declaration */
   }
@@ -48,7 +48,7 @@
     transform: rotate(108.58deg) translate(50%, 65%);
     width: 662px;
     height: 432px;
-    background: url("./assets/images/職員2.png") no-repeat;
+    background: url("./assets/images/staff-2.png") no-repeat;
     background-size: contain;
     @include s1440 {
       display: none;
@@ -61,7 +61,7 @@
     transform: rotate(-124.58deg);
     width: 353px;
     height: 611px;
-    background: url("./assets/images/職員3.png") no-repeat;
+    background: url("./assets/images/staff-3.png") no-repeat;
     background-size: contain;
     @include s1440 {
       display: none;
@@ -76,7 +76,7 @@
     width: 456px;
     // height: 50%;
     height: 851px;
-    background: url("./assets/images/職員1.png") no-repeat;
+    background: url("./assets/images/staff-1.png") no-repeat;
     background-size: contain;
     @include s1440 {
       left: 30px;
@@ -110,7 +110,7 @@
     width: 512.52px;
     // height: 70%;
     height: 887.32px;
-    background: url("./assets/images/職員4.png") no-repeat;
+    background: url("./assets/images/staff-4.png") no-repeat;
     background-size: contain;
     @include s1440 {
       right: 80px;

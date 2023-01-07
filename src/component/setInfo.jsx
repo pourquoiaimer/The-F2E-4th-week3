@@ -12,7 +12,13 @@ const SetInfo = () => {
 
     useEffect(() => {
         //先取得參數
-        // timeline.from(".people_red", { y: 500 }, 0)
+        // timeline.fromTo(".title", { y: -1200, width: "50%" }, { y: 0, duration: 2 }, 0)
+        // timeline.to(".title", { width: "75%", onComplete: () => { setCanGo(true) } }, 2)
+        // timeline.to(".press_to_start", { opacity: 1, repeat: "-1", yoyo: true }, 2.3)
+        // timeline.from(".people_left_down", { y: 1000 }, 1.5)
+        // timeline.from(".people_right_down", { y: 1000 }, 2)
+        // timeline.from(".people_left_top", { x: -1000 }, 1.8)
+        // timeline.from(".people_right_top", { x: 1000 }, 2.3)
     }, [])
 
     function goNext() {
@@ -27,15 +33,21 @@ const SetInfo = () => {
         //       gsap.to(".people_right_top", { x: 1000 ,duration: 0.7,onComplete:()=>{setNowShow("second_page")}})
         // }
     }
-    let text1 = `"菜鳥！恭喜你成為六角學院的正式員工啦！在正式加入專案開發之前，
+    let text1 = `...`
+    let text2 = `"菜鳥！恭喜你成為六角學院的正式員工啦！在正式加入專案開發之前，
     需要請你先了解 Scrum 的流程與精神！
     
     成功通過 Scrum 新手村的試煉吧！`
-    // gsap.to('#box', {duration: 2, delay: 1, x: 300 })
-    return (
+
+    let buttonOption1 ={title:"",type:0} 
+    let buttonOption2 ={title:"開始試煉",type:1} 
+
+
+    return (  //分階段，先是跑確認框框的對話，再來才是set info的部份
         <div className='set_info'>
             <div className='people_red'></div>
-            <TextBlock text={text1} />
+            <TextBlock text={text1} buttonOption={buttonOption1} />
+            {/* <TextBlock text={text2} buttonOption={buttonOption2} /> */}
         </div>
     )
 }

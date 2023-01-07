@@ -5,7 +5,7 @@ import FirstPage from "./component/firstPage";
 import SetInfo from './component/setInfo';
 export const all_status = createContext()
 function App() {
-  const [nowShow, setNowShow] = useState("first_page")
+  const [nowShow, setNowShow] = useState("set_info")
   const [userInfo, setUserInfo] = useState({ name: "", sex: "" })
   const [allPage, setAllPage] = useState([
     { page_name: 'first_page', page_link: <FirstPage /> },
@@ -23,7 +23,6 @@ function App() {
             return data.page_link
           }
         })}
-        {/* <FirstPage/> */}
       </all_status.Provider>
     </div>
   )
